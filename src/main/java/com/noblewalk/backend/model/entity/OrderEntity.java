@@ -14,7 +14,7 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Document(collection = "appointments")
+@Document(collection = "booking")
 public class OrderEntity {
 
     @Id

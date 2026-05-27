@@ -14,7 +14,7 @@ spring:
     mongodb:
       user: admin
       password: admin
-      database: medicus-connect
+      database: noblewalk
       uri: mongodb://localhost:27017
 
 config:
