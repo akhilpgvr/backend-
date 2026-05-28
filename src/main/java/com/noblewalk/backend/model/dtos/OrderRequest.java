@@ -18,5 +18,4 @@ public class OrderRequest {
     private List<String> ItemNames;
     private Double totalPrice;
     private String deliveryAddress;
-    private Date orderedDate;
 }

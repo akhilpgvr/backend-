@@ -21,6 +21,7 @@ public class OrderEntity {
     @Generated
     private String id;
 
+    private String orderNumber;
     private String userMobileNo;
     private String userMailId;
     private String userName;
