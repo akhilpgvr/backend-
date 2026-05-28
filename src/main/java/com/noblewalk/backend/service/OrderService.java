@@ -1,6 +1,5 @@
 package com.noblewalk.backend.service;
 
-import com.noblewalk.backend.Helper;
 import com.noblewalk.backend.exceptions.OrderNotCreatedException;
 import com.noblewalk.backend.model.dtos.OrderRequest;
 import com.noblewalk.backend.model.entity.OrderEntity;
