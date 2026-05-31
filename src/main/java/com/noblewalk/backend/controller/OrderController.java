@@ -7,10 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @Slf4j
 @RestController
@@ -20,11 +17,16 @@ public class OrderController {
     @Autowired
     private OrderService orderService;
 
-    @Operation(summary = "", description = "Endpoint to get the suggested specialist")
+    @Operation(summary = "", description = "API got creating a sales Order")
     @PostMapping("/create")
     public ResponseEntity<String> createOrder(@RequestBody OrderRequest  orderRequest) {
-        return new ResponseEntity<>(orderService.createOrder(orderRequest),  HttpStatus.OK);
+        return new ResponseEntity<>(orderService.createOrder(orderRequest),  HttpStatus.CREATED);
     }
 
+    @Operation(summary = "", description = "API for deleting a sales order")
+    @DeleteMapping("/delete")
+    public ResponseEntity<String> deleteOrder(@RequestParam String  orderNumber) {
+        return new ResponseEntity<>(orderService.deleteOrder(orderNumber), HttpStatus.OK);
+    }
 
 }
