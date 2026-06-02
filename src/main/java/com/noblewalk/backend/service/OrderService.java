@@ -2,7 +2,7 @@ package com.noblewalk.backend.service;
 
 import com.noblewalk.backend.exceptions.OrderNotCreatedException;
 import com.noblewalk.backend.exceptions.OrderNotFoundException;
-import com.noblewalk.backend.model.dtos.OrderRequest;
+import com.noblewalk.backend.model.dtos.request.OrderRequest;
 import com.noblewalk.backend.model.entity.OrderEntity;
 import com.noblewalk.backend.repo.OrderRepo;
 import lombok.extern.slf4j.Slf4j;
