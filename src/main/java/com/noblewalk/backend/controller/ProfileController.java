@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/profile")
 public class ProfileController {
 
-    @Operation(summary = "", description = "Endpoint to get the suggested specialist")
+    @Operation(summary = "", description = "API to create User Profile")
     @PostMapping("/create")
     public String createProfile(){
         return "";

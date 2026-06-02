@@ -1,6 +1,6 @@
 package com.noblewalk.backend.controller;
 
-import com.noblewalk.backend.model.dtos.OrderRequest;
+import com.noblewalk.backend.model.dtos.request.OrderRequest;
 import com.noblewalk.backend.service.OrderService;
 import io.swagger.v3.oas.annotations.Operation;
 import lombok.extern.slf4j.Slf4j;

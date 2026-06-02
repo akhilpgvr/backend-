@@ -1,4 +1,4 @@
-package com.noblewalk.backend.model.dtos;
+package com.noblewalk.backend.model.dtos.request;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
