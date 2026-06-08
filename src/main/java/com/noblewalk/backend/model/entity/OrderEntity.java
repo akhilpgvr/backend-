@@ -9,12 +9,12 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDateTime;
 import java.util.Date;
-import java.util.List;
+import java.util.HashMap;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Document(collection = "booking")
+@Document(collection = "sales orders")
 public class OrderEntity {
 
     @Id
@@ -25,7 +25,7 @@ public class OrderEntity {
     private String userMobileNo;
     private String userMailId;
     private String userName;
-    private List<String> ItemNames;
+    private HashMap<String, Integer> Items;
     private Double totalPrice;
     private String deliveryAddress;
     private Date orderedDate;

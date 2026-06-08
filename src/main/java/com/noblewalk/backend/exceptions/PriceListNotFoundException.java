@@ -1,0 +1,7 @@
+package com.noblewalk.backend.exceptions;
+
+public class PriceListNotFoundException extends RuntimeException {
+    public PriceListNotFoundException(String message) {
+        super(message);
+    }
+}
